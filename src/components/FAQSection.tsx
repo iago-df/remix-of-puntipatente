@@ -10,36 +10,36 @@ import { HelpCircle } from "lucide-react";
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Quanti punti ho sulla mia patente?",
-      answer: "Puoi controllare i tuoi punti attraverso il portale ACI, l'app iPatente o presso gli uffici della Motorizzazione. Il controllo è gratuito e immediato con SPID o CIE."
+      question: "Come funziona l'analisi AI del profilo di rischio?",
+      answer: "La nostra intelligenza artificiale analizza oltre 50 parametri inclusi storico infrazioni, punti patente, frequenza multe e pattern comportamentali per generare un score di rischio da 0 a 100 in tempo reale."
     },
     {
-      question: "Cosa succede se arrivo a 0 punti?",
-      answer: "Con 0 punti la patente viene sospesa. Dovrai frequentare un corso di recupero punti e sostenere l'esame di revisione per riottenere la patente."
+      question: "Quanto tempo ci vuole per ottenere il report?",
+      answer: "Il profilo di rischio completo viene generato in meno di 30 secondi dall'inserimento dei dati. Riceverai immediatamente il report in formato PDF con score, categoria di rischio e raccomandazioni."
     },
     {
-      question: "Posso recuperare punti senza corso?",
-      answer: "Sì, se non commetti infrazioni per 2 anni consecutivi recuperi automaticamente tutti i punti fino al massimo di 20. È il sistema di recupero automatico."
+      question: "I dati dei clienti sono sicuri e conformi al GDPR?",
+      answer: "Sì, siamo completamente conformi al GDPR. Tutti i dati sono crittografati end-to-end, non vengono conservati oltre il necessario e il cliente mantiene sempre il controllo sui propri dati personali."
     },
     {
-      question: "Quanto costa un corso di recupero punti?",
-      answer: "I costi variano: il corso base (6 punti) costa circa €280, quello avanzato (9 punti) circa €420. I prezzi possono variare tra le diverse autoscuole."
+      question: "Posso integrare il servizio nel mio sistema esistente?",
+      answer: "Sì, offriamo API complete per l'integrazione nei pacchetti da 50+ verifiche. Il nostro team tecnico ti supporterà nell'integrazione con il tuo software di gestione noleggi."
     },
     {
-      question: "Ogni quanto posso fare un corso?",
-      answer: "Puoi frequentare un corso di recupero punti una volta ogni due anni, a meno che la patente non sia stata sospesa per azzeramento punti."
+      question: "Quanto è accurata la predizione del rischio?",
+      answer: "Il nostro algoritmo di machine learning ha un'accuratezza superiore al 95% nella predizione del rischio di sinistri, validata su oltre 2 milioni di profili analizzati negli ultimi 3 anni."
     },
     {
-      question: "Le multe arrivano subito ai punti?",
-      answer: "La decurtazione avviene solo dopo il pagamento della multa o la definizione del ricorso. Fino ad allora i punti rimangono invariati."
+      question: "Cosa succede se il guidatore non ha infrazioni?",
+      answer: "Anche guidatori senza infrazioni ricevono un profilo completo. L'AI analizza l'esperienza di guida, l'età della patente e altri fattori per determinare comunque un livello di rischio accurato."
     },
     {
-      question: "Posso guidare con patente sospesa?",
-      answer: "No, guidare con patente sospesa è un reato penale punibile con ammenda e arresto. Il veicolo viene sequestrato e confiscato in caso di recidiva."
+      question: "Posso utilizzare il servizio per guidatori stranieri?",
+      answer: "Attualmente il servizio è ottimizzato per patenti italiane ed europee. Stiamo lavorando per estendere la copertura ad altre nazioni. Contattaci per esigenze specifiche."
     },
     {
-      question: "Come funziona per i neopatentati?",
-      answer: "I neopatentati partono con 20 punti ma subiscono decurtazioni doppie nei primi 3 anni. Chi non commette infrazioni ottiene un bonus di punti aggiuntivi."
+      question: "Offrite supporto e formazione per utilizzare il servizio?",
+      answer: "Sì, incluso nei pacchetti da 20+ verifiche c'è supporto prioritario e training per il tuo team. Per i pacchetti da 50+ assegniamo anche un account manager dedicato."
     }
   ];
 
@@ -52,7 +52,7 @@ const FAQSection = () => {
           </div>
           <h2 className="text-4xl font-bold mb-4">Domande Frequenti</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Risposte alle domande più comuni sui punti patente e sui corsi di recupero.
+            Risposte alle domande più comuni sul nostro servizio di analisi AI per il rischio guidatori.
           </p>
         </div>
 

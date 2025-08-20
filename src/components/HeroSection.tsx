@@ -9,15 +9,15 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Gestisci i tuoi{" "}
+              Riduci i Rischi del{" "}
               <span className="bg-gradient-to-r from-accent to-warning bg-clip-text text-transparent">
-                Punti Patente
+                Noleggio Auto
               </span>{" "}
-              con facilità
+              con l'AI
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-8 max-w-3xl mx-auto">
-              Controlla il saldo, comprendi le sanzioni e recupera i punti persi con i nostri corsi specializzati.
-              La soluzione completa per automobilisti responsabili.
+              Ottieni il profilo di rischio completo di ogni guidatore con tecnologie innovative e intelligenza artificiale. 
+              Proteggi la tua flotta e riduci i sinistri.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -26,7 +26,7 @@ const HeroSection = () => {
                 className="bg-success hover:bg-success-light text-success-foreground shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
               >
                 <CheckCircle className="mr-2 h-5 w-5" />
-                Controlla i Tuoi Punti
+                Prova Gratis - Solo €3.99
               </Button>
               <Button 
                 variant="outline" 
@@ -34,7 +34,7 @@ const HeroSection = () => {
                 className="border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur"
               >
                 <Shield className="mr-2 h-5 w-5" />
-                Scopri Come Funziona
+                Come Funziona
               </Button>
             </div>
           </div>
@@ -42,25 +42,25 @@ const HeroSection = () => {
           <div className="grid md:grid-cols-3 gap-6 mt-16">
             <Card className="bg-white/10 backdrop-blur border-white/20 p-6">
               <Shield className="h-12 w-12 text-accent mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-2">Controllo Immediato</h3>
+              <h3 className="text-xl font-semibold mb-2">Analisi AI Avanzata</h3>
               <p className="opacity-80">
-                Verifica in tempo reale il saldo dei tuoi punti patente
+                Intelligenza artificiale analizza storico infrazioni e comportamenti di guida
               </p>
             </Card>
             
             <Card className="bg-white/10 backdrop-blur border-white/20 p-6">
               <Users className="h-12 w-12 text-success-light mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-2">Corsi Certificati</h3>
+              <h3 className="text-xl font-semibold mb-2">Profilo Completo</h3>
               <p className="opacity-80">
-                Recupera punti con corsi riconosciuti dal Ministero
+                Rapporto dettagliato con score di rischio e raccomandazioni
               </p>
             </Card>
             
             <Card className="bg-white/10 backdrop-blur border-white/20 p-6">
               <AlertTriangle className="h-12 w-12 text-warning mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-2">Alert e Notifiche</h3>
+              <h3 className="text-xl font-semibold mb-2">Decisioni Informate</h3>
               <p className="opacity-80">
-                Ricevi avvisi quando i tuoi punti sono a rischio
+                Approva o rifiuta noleggi basandoti su dati concreti
               </p>
             </Card>
           </div>

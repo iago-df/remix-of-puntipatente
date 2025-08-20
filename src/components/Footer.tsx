@@ -9,15 +9,15 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Shield className="h-8 w-8" />
-              <div>
-                <h3 className="text-xl font-bold">PuntiPatente.com</h3>
-                <p className="text-sm opacity-80">Il tuo consulente digitale</p>
-              </div>
+            <div>
+              <h3 className="text-xl font-bold">PuntiPatente.com</h3>
+              <p className="text-sm opacity-80">Profili di rischio per noleggiatori</p>
             </div>
-            <p className="text-sm opacity-90 mb-4">
-              La soluzione completa per gestire i punti della tua patente.
-              Servizi certificati e conformi alle normative italiane.
-            </p>
+          </div>
+          <p className="text-sm opacity-90 mb-4">
+            Tecnologie AI innovative per valutare il rischio dei guidatori.
+            Riduci sinistri e proteggi la tua flotta con analisi predittive avanzate.
+          </p>
             <div className="flex space-x-2">
               <Button variant="outline" size="sm" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
                 <Phone className="h-4 w-4" />
@@ -31,31 +31,31 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Servizi</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#controllo" className="opacity-80 hover:opacity-100 transition-opacity">Controllo Punti</a></li>
-              <li><a href="#corsi" className="opacity-80 hover:opacity-100 transition-opacity">Corsi Recupero</a></li>
-              <li><a href="#info" className="opacity-80 hover:opacity-100 transition-opacity">Informazioni</a></li>
-              <li><a href="#faq" className="opacity-80 hover:opacity-100 transition-opacity">Domande Frequenti</a></li>
+              <li><a href="#servizio" className="opacity-80 hover:opacity-100 transition-opacity">Analisi AI</a></li>
+              <li><a href="#prezzi" className="opacity-80 hover:opacity-100 transition-opacity">Prezzi</a></li>
+              <li><a href="#vantaggi" className="opacity-80 hover:opacity-100 transition-opacity">Vantaggi</a></li>
+              <li><a href="#faq" className="opacity-80 hover:opacity-100 transition-opacity">FAQ</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Link Utili</h4>
+            <h4 className="font-semibold mb-4">Aziende</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity flex items-center gap-1">
-                  Portale ACI <ExternalLink className="h-3 w-3" />
+                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Rent-a-Car
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity flex items-center gap-1">
-                  Ministero Trasporti <ExternalLink className="h-3 w-3" />
+                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                  Car Sharing
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Codice della Strada</a>
+                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Flotte Aziendali</a>
               </li>
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Normative Patenti</a>
+                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Noleggio Lungo Termine</a>
               </li>
             </ul>
           </div>

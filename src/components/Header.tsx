@@ -10,19 +10,19 @@ const Header = () => {
             <Shield className="h-8 w-8 text-primary" />
             <div>
               <h1 className="text-xl font-bold text-primary">PuntiPatente.com</h1>
-              <p className="text-xs text-muted-foreground">Il tuo consulente digitale</p>
+              <p className="text-xs text-muted-foreground">Profili di rischio per noleggiatori</p>
             </div>
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#info" className="text-foreground hover:text-primary transition-colors">
-              Info Punti
+            <a href="#servizio" className="text-foreground hover:text-primary transition-colors">
+              Il Servizio
             </a>
-            <a href="#controllo" className="text-foreground hover:text-primary transition-colors">
-              Controlla Punti
+            <a href="#prezzi" className="text-foreground hover:text-primary transition-colors">
+              Prezzi
             </a>
-            <a href="#corsi" className="text-foreground hover:text-primary transition-colors">
-              Corsi Recupero
+            <a href="#vantaggi" className="text-foreground hover:text-primary transition-colors">
+              Vantaggi
             </a>
             <a href="#faq" className="text-foreground hover:text-primary transition-colors">
               FAQ
@@ -35,7 +35,7 @@ const Header = () => {
               Contatti
             </Button>
             <Button size="sm" className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg">
-              Controlla Ora
+              Prova Gratis
             </Button>
           </div>
         </div>
