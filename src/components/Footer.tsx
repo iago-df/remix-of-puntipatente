@@ -60,23 +60,27 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-semibold mb-4">Contatti</h4>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span>800-123-456</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <span>info@puntipatente.com</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 mt-1" />
-                <span>Via Roma 123<br />00100 Roma, Italia</span>
+            <div>
+              <h4 className="font-semibold mb-4">Contatti</h4>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  <a href="tel:+393494373097" className="opacity-80 hover:opacity-100 transition-opacity">
+                    349 437 3097
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  <a href="mailto:info@puntipatente.com" className="opacity-80 hover:opacity-100 transition-opacity">
+                    info@puntipatente.com
+                  </a>
+                </div>
+                <div className="flex items-start gap-2">
+                  <MapPin className="h-4 w-4 mt-1" />
+                  <span>Milano, Italia</span>
+                </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8">
