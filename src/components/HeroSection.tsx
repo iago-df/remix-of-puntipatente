@@ -16,7 +16,7 @@ const HeroSection = () => {
               con l'AI
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-8 max-w-3xl mx-auto">
-              Ottieni il profilo di rischio completo di ogni guidatore con tecnologie innovative e intelligenza artificiale. 
+              Verifica istantanea dei punti patente e profilo di rischio dettagliato per ogni cliente con intelligenza artificiale. 
               Proteggi la tua flotta e riduci i sinistri.
             </p>
             
@@ -26,7 +26,7 @@ const HeroSection = () => {
                 className="bg-success hover:bg-success-light text-success-foreground shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
               >
                 <CheckCircle className="mr-2 h-5 w-5" />
-                Prova Gratis - Solo €3.99
+                Inizia da €3.99
               </Button>
               <Button 
                 variant="outline" 
