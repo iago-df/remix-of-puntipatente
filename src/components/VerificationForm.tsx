@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Upload, FileText, Calendar, CreditCard } from "lucide-react";
+
+import { Upload, Calendar, CreditCard } from "lucide-react";
 
 const VerificationForm = () => {
   const [dragActive, setDragActive] = useState(false);
@@ -45,21 +45,13 @@ const VerificationForm = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Tabs defaultValue="upload" className="w-full">
-                <TabsList className="grid w-full grid-cols-2">
-                  <TabsTrigger value="upload" className="flex items-center gap-2">
-                    <Upload className="h-4 w-4" />
-                    Carica Patente
-                  </TabsTrigger>
-                  <TabsTrigger value="manual" className="flex items-center gap-2">
-                    <FileText className="h-4 w-4" />
-                    Inserimento Manuale
-                  </TabsTrigger>
-                </TabsList>
-
-                <TabsContent value="upload" className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Left column - File Upload */}
+                <div className="space-y-4">
                   <div className="text-center">
-                    <h3 className="text-lg font-semibold mb-2">Carica qui la patente del cliente da verificare</h3>
+                    <h3 className="text-lg font-semibold mb-2">
+                      Carica qui la patente del cliente da verificare
+                    </h3>
                     <p className="text-sm text-muted-foreground mb-4">
                       Carica fronte e retro della patente per l'analisi automatica
                     </p>
@@ -87,18 +79,16 @@ const VerificationForm = () => {
                       Seleziona File
                     </Button>
                   </div>
-                  
-                  <Button className="w-full bg-gradient-to-r from-primary to-primary-glow" size="lg">
-                    <CreditCard className="mr-2 h-4 w-4" />
-                    Verifica - €3.99
-                  </Button>
-                </TabsContent>
+                </div>
 
-                <TabsContent value="manual" className="space-y-4">
-                  <div className="text-center mb-6">
-                    <h3 className="text-lg font-semibold mb-2">Inserisci qui direttamente i dati del cliente</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Numero patente e data di nascita per la verifica istantanea
+                {/* Right column - Manual Entry */}
+                <div className="space-y-4">
+                  <div className="text-center">
+                    <h3 className="text-lg font-semibold mb-2">
+                      Oppure inserisci qui direttamente il numero patente e la data di nascita del cliente
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Verifica istantanea dei punti patente per profilo di rischio dettagliato
                     </p>
                   </div>
                   
@@ -121,20 +111,23 @@ const VerificationForm = () => {
                       />
                     </div>
                   </div>
-                  
-                  <Button className="w-full bg-gradient-to-r from-primary to-primary-glow" size="lg">
-                    <CreditCard className="mr-2 h-4 w-4" />
-                    Verifica - €3.99
-                  </Button>
-                </TabsContent>
-              </Tabs>
+                </div>
+              </div>
 
-              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Calendar className="h-4 w-4" />
-                  <span>
-                    <strong>Offerta Lancio:</strong> Prime 20 verifiche a €3.99 invece di €7.99 (fino al 31/10/2025)
-                  </span>
+              {/* Single CTA Button */}
+              <div className="mt-8 space-y-4">
+                <Button className="w-full bg-gradient-to-r from-primary to-primary-glow" size="lg">
+                  <CreditCard className="mr-2 h-4 w-4" />
+                  Verifica - €7.99 + IVA
+                </Button>
+                
+                <div className="p-4 bg-muted/50 rounded-lg">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Calendar className="h-4 w-4" />
+                    <span>
+                      <strong>Offerta Lancio:</strong> Prime 20 verifiche a €3.99 invece di €7.99 (fino al 31/10/2025)
+                    </span>
+                  </div>
                 </div>
               </div>
             </CardContent>

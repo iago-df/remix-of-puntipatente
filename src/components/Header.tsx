@@ -29,14 +29,21 @@ const Header = () => {
             </a>
           </nav>
           
-          <div className="flex items-center space-x-2">
-            <Button variant="outline" size="sm" className="hidden sm:flex">
-              <Phone className="h-4 w-4 mr-2" />
-              Contatti
-            </Button>
-            <Button size="sm" className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg">
-              Prova Gratis
-            </Button>
+          <div className="flex items-center space-x-4">
+            <a 
+              href="tel:+393494373097" 
+              className="hidden sm:flex items-center space-x-2 text-foreground hover:text-primary transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              <span className="text-sm">349 437 3097</span>
+            </a>
+            <a 
+              href="mailto:info@puntipatente.com"
+              className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors"
+            >
+              <Mail className="h-4 w-4" />
+              <span className="text-sm hidden md:inline">info@puntipatente.com</span>
+            </a>
           </div>
         </div>
       </div>
