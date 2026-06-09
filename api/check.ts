@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
-const BASE_URL = "https://license-checker-6imslhswka-ew.a.run.app";
+const BASE_URL = "https://license-checker-947446594444.europe-west1.run.app";
 const API_KEY = process.env.LICENCE_API_KEY ?? "test-1234";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -26,7 +26,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     if (action === "transcript") {
-      const url = `${BASE_URL}/transcript/${encodeURIComponent(jobId)}`;
+      const url = `${BASE_URL}/transcripts/${encodeURIComponent(jobId)}`;
       const response = await fetch(url, {
         headers: { "X-API-Key": API_KEY },
       });
