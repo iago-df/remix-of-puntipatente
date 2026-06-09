@@ -16,8 +16,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const response = await fetch(url, {
         headers: { "X-API-Key": API_KEY },
       });
-      const data = await response.json();
-      return res.status(response.status).json(data);
+      const text = await response.text();
+      console.log("API response start:", text);
+      try {
+        return res.status(response.status).json(JSON.parse(text));
+      } catch {
+        return res.status(500).json({ error: "API returned non-JSON", body: text });
+      }
     }
 
     if (action === "transcript") {
@@ -28,8 +33,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       if (response.status === 404) {
         return res.status(404).json({ status: "pending" });
       }
-      const data = await response.json();
-      return res.status(response.status).json(data);
+      const text = await response.text();
+      console.log("API response transcript:", text);
+      try {
+        return res.status(response.status).json(JSON.parse(text));
+      } catch {
+        return res.status(500).json({ error: "API returned non-JSON", body: text });
+      }
     }
 
     return res.status(400).json({ error: "Invalid action" });
